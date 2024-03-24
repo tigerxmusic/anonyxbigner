@@ -117,7 +117,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
     global can_show
     # Custom logic based on the text of the button pressed
     if text == "🎰Colour Prediction":
-        await update.message.reply_text("you will be given to choose",reply_markup=ReplyKeyboardRemove())
+        await update.message.reply_text("Select The Game For which You Need Prediction ",reply_markup=ReplyKeyboardRemove())
         await choose(update, context)
 
     elif text == "fuck you":
@@ -138,7 +138,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
         next_markup = ReplyKeyboardMarkup([next_prediction,back_press],resize_keyboard=True,one_time_keyboard=True)
 
 
-        pred = f"✅Prediction Result:\n👨‍💻Period No: {text}\n⚡Result: {result} \n\n Powered by : @BIGGNERS "
+        pred = f"✅Prediction Result:\n👨‍💻Period No: {text}\n⚡Result: {result} \n\n Powered by : Ethical_Botz"
 
         can_show = False
 
