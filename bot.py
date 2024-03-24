@@ -32,7 +32,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
             # [[inactive_button1], [inactive_button2]]
             reply_markup = InlineKeyboardMarkup([keyboard ,joined_status_no])
             # await update.message.reply_text('Please join the channel to use this bot.', reply_markup=reply_markup)
-            await context.bot.send_photo(chat_id=chat_id, photo=image_file, caption='💡 You need to join our channel to use this bot.',reply_markup=reply_markup)
+            await context.bot.send_photo(chat_id=chat_id, photo=image_file, caption='💡 𝐘𝐨𝐮 𝐧𝐞𝐞𝐝 𝐭𝐨 𝐣𝐨𝐢𝐧 𝐨𝐮𝐫 𝐜𝐡𝐚𝐧𝐧𝐞𝐥 𝐭𝐨 𝐮𝐬𝐞 𝐭𝐡𝐢𝐬 𝐛𝐨𝐭.',reply_markup=reply_markup)
         else:
 
             user_chat_ids.add(chat_id)
