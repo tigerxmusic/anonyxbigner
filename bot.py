@@ -32,7 +32,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
             # [[inactive_button1], [inactive_button2]]
             reply_markup = InlineKeyboardMarkup([keyboard ,joined_status_no])
             # await update.message.reply_text('Please join the channel to use this bot.', reply_markup=reply_markup)
-            await context.bot.send_photo(chat_id=chat_id, photo=image_file, caption='Please join the channel to use this bot.',reply_markup=reply_markup)
+            await context.bot.send_photo(chat_id=chat_id, photo=image_file, caption='💡 You need to join our channel to use this bot.',reply_markup=reply_markup)
         else:
 
             user_chat_ids.add(chat_id)
@@ -46,7 +46,19 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
             # await update.message.reply_text('Hello! You are a member of the channel. You can use the bot commands.')
             await context.bot.send_photo(chat_id=chat_id, photo=image_file, caption='Hello! You are a member of the channel. You can use the bot commands.',reply_markup=reply_markup2)
             
-            await context.bot.send_message(chat_id=chat_id, text="play the games",reply_markup=prediction_markup)
+            await context.bot.send_message(chat_id=chat_id, text="👋 Hey! Welcome to our Bot.
+
+❤️‍🔥 Get 99.99% accurate colour prediction!
+
+💡 This Prediction Bot will only work when you have Register with bellow links.
+https://tirangagames.in/#/register?invitationCode=34858121497
+TirangaGames:
+https://tirangagames.in/#/register?invitationCode=34858121497
+
+82 Lottery:
+https://82bet.com/#/register?invitationCode=1586397264
+
+📑 If you follow with above links, there will be upto 99% chance of right prediction.",reply_markup=prediction_markup)
             # await update.message.reply_text('play the games',reply_markup=prediction_markup)
 
     # with open(image_path, 'rb') as image_file:
