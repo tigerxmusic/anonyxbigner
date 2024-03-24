@@ -44,7 +44,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
             prediction_button = [[KeyboardButton(text="🎰Colour Prediction")]]
             prediction_markup = ReplyKeyboardMarkup(prediction_button,resize_keyboard=True,one_time_keyboard=True)
             # await update.message.reply_text('Hello! You are a member of the channel. You can use the bot commands.')
-            await context.bot.send_photo(chat_id=chat_id, photo=image_file, caption='Hello! You are a member of the channel. You can use the bot commands.',reply_markup=reply_markup2)
+            await context.bot.send_photo(chat_id=chat_id, photo=image_file, caption='𝐇𝐞𝐥𝐥𝐨! 𝐘𝐨𝐮 𝐚𝐫𝐞 𝐚 𝐦𝐞𝐦𝐛𝐞𝐫 𝐨𝐟 𝐭𝐡𝐞 𝐜𝐡𝐚𝐧𝐧𝐞𝐥. 𝐘𝐨𝐮 𝐜𝐚𝐧 𝐮𝐬𝐞 𝐭𝐡𝐞 𝐛𝐨𝐭 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬.',reply_markup=reply_markup2)
             
             await context.bot.send_message(chat_id=chat_id, text='''👋 Hey! Welcome to our Bot.
 
