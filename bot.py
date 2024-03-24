@@ -14,7 +14,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 user_chat_ids = set()
 
 def Random_choice():
-    option = ['BIG','SMALL']
+    option = ['𝐁𝐈𝐆','𝐒𝐌𝐀𝐋𝐋']
     return choice(option)
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
