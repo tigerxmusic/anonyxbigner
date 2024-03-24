@@ -117,7 +117,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
     global can_show
     # Custom logic based on the text of the button pressed
     if text == "🎰Colour Prediction":
-        await update.message.reply_text("Select The Game For which You Need Prediction ",reply_markup=ReplyKeyboardRemove())
+        await update.message.reply_text("💻 Select game for prediction:",reply_markup=ReplyKeyboardRemove())
         await choose(update, context)
 
     elif text == "fuck you":
@@ -125,7 +125,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
     
     elif text == "⚀ Tiranga Games" or text == "⛾ 82lottery" or text == "⚡ Next Prediction ⚡":
 
-        await update.message.reply_text("Enter Period last 3 digits",reply_markup=ReplyKeyboardRemove())
+        await update.message.reply_text("🎮 Enter Period last 3 digits.",reply_markup=ReplyKeyboardRemove())
         text = update.message.text
         can_show = True
 
@@ -138,7 +138,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
         next_markup = ReplyKeyboardMarkup([next_prediction,back_press],resize_keyboard=True,one_time_keyboard=True)
 
 
-        pred = f"✅Prediction Result:\n👨‍💻Period No: {text}\n⚡Result: {result} \n\n Powered by : Ethical_Botz"
+        pred = f"✅Prediction Result:\n👨‍💻Period No: {text}\n⚡Result: {result} \n\n Powered by 😈 : The Biggners Journey"
 
         can_show = False
 
