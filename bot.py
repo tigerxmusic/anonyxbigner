@@ -7,7 +7,7 @@ CHANNEL_USERNAME = '@the_biggners_journery'  # Replace with your channel's usern
 CHANNEL_LINK = 'https://t.me/the_biggners_journery'  # Replace with your channel's invite link
 
 can_show = False
-admins = ['DebyO2']
+admins = ['@anonymous_O_1']
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
