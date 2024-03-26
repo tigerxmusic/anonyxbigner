@@ -3,8 +3,8 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, filte
 from random import choice
 import logging
 
-CHANNEL_USERNAME = '@the_biggners_journery'  # Replace with your channel's username
-CHANNEL_LINK = 'https://t.me/the_biggners_journery'  # Replace with your channel's invite link
+CHANNEL_USERNAME = '@BIGGNERS_EXTRA'  # Replace with your channel's username
+CHANNEL_LINK = 'https://t.me/BIGGNERS_EXTRA'  # Replace with your channel's invite link
 
 can_show = False
 admins = ['BIGGNERS']
@@ -157,7 +157,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
     
     print(can_show)
     
-application = ApplicationBuilder().token("7120280595:AAFMeZ_Sfh1W4gV_Q8d-8quZJ2Dye0GpME4").build()
+application = ApplicationBuilder().token("7120280595:AAHTx-hGv9pfv74o59K0eu1D6Rn686A55sY").build()
 
 application.add_handler(CommandHandler("start", start))
 application.add_handler(CommandHandler("broadcast", broadcast))
