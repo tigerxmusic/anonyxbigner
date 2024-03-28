@@ -83,8 +83,8 @@ async def choose(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     if not (chat_member.status in ['left', 'kicked']):
         print("yea");
         tiranga = [KeyboardButton(text="⚀ Tiranga Games")]
-        lottery = [KeyboardButton(text="⛾ 82lottery")]
-        choose_markup = ReplyKeyboardMarkup([tiranga,lottery],resize_keyboard=True,one_time_keyboard=True)
+        
+        choose_markup = ReplyKeyboardMarkup([tiranga],resize_keyboard=True,one_time_keyboard=True)
         await context.bot.send_message(chat_id=chat_id, text="choose",reply_markup=choose_markup)
     else:
         pass
@@ -123,7 +123,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
     elif text == "fuck you":
         await update.message.reply_text("no, fuck you")
     
-    elif text == "⚀ Tiranga Games" or text == "⛾ 82lottery" or text == "⚡ Next Prediction ⚡":
+    elif text == "⚀ Tiranga Games" or text == "⚡ Next Prediction ⚡":
 
         await update.message.reply_text("🎮 Enter Period last 3 digits.",reply_markup=ReplyKeyboardRemove())
         text = update.message.text
