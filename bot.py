@@ -155,7 +155,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
     
     print(can_show)
     
-application = ApplicationBuilder().token("7120280595:AAHTx-hGv9pfv74o59K0eu1D6Rn686A55sY").build()
+application = ApplicationBuilder().token("7081960525:AAH23LZ7B429ZTVTQqHluB9HQAuwdrB4u58").build()
 
 application.add_handler(CommandHandler("start", start))
 application.add_handler(CommandHandler("broadcast", broadcast))
