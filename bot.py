@@ -53,10 +53,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 💡 This Prediction Bot will only work when you have Register with bellow links.
 
 TirangaGames:
-https://tirangagames.in/#/register?invitationCode=34858121497
+https://tirangacasino.in/#/register?invitationCode=3252569730
 
-82 Lottery:
-https://82bet.com/#/register?invitationCode=1586397264
 
 📑 If you follow with above links, there will be upto 99% chance of right prediction.''',reply_markup=prediction_markup)
             # await update.message.reply_text('play the games',reply_markup=prediction_markup)
@@ -138,7 +136,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
         next_markup = ReplyKeyboardMarkup([next_prediction,back_press],resize_keyboard=True,one_time_keyboard=True)
 
 
-        pred = f"✅Prediction Result:\n👨‍💻Period No: {text}\n⚡Result: {result} \n\n Powered by 😈 : The Biggners Journey"
+        pred = f"✅Prediction Result:\n👨‍💻Period No: {text}\n⚡Result: {result} \n\n Powered by 😈 : ◤𝙏𝙄𝙍𝘼𝙉𝙂𝘼◢~JASS "
 
         can_show = False
 
