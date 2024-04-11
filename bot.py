@@ -3,7 +3,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, filte
 from random import choice
 import logging
 
-CHANNEL_USERNAME = '@THESAMURAIJOURNEY1'  # Replace with your channel's username
+CHANNEL_USERNAME = '@THESAMURAIJOURNEe'  # Replace with your channel's username
 CHANNEL_LINK = 'https://t.me/+WxzELa3XPZAwOTQ1'  # Replace with your channel's invite link
 
 can_show = False
